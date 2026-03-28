@@ -1,0 +1,12 @@
+{
+  "name": "selma",
+  "private": true,
+  "workspaces": ["apps/*", "packages/*"],
+  "scripts": {
+    "dev": "bun run --filter '*' dev",
+    "dev:web": "bun run --filter @selma/web dev",
+    "dev:api": "bun run --filter @selma/api dev",
+    "build": "bun run --filter '*' build",
+    "lint": "bun run --filter '*' lint"
+  }
+}
