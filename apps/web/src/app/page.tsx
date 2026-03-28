@@ -8,6 +8,7 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { Separator } from "@/components/ui/separator";
+import Link from "next/link";
 import {
   ArrowRight,
   Check,
@@ -163,7 +164,10 @@ export default function Home() {
               </a>
             </div>
           </div>
-          <Button className="h-9 rounded-full bg-amber-500 px-4 text-sm font-semibold text-zinc-950 hover:bg-amber-400">
+          <Button
+            className="h-9 rounded-full bg-amber-500 px-4 text-sm font-semibold text-zinc-950 hover:bg-amber-400"
+            render={<Link href="/session" />}
+          >
             Get Started
           </Button>
         </div>
@@ -201,7 +205,10 @@ export default function Home() {
             className="animate-fade-up mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row"
             style={{ animationDelay: "300ms" }}
           >
-            <Button className="h-12 rounded-full bg-amber-500 px-8 text-sm font-semibold text-zinc-950 hover:bg-amber-400">
+            <Button
+              className="h-12 rounded-full bg-amber-500 px-8 text-sm font-semibold text-zinc-950 hover:bg-amber-400"
+              render={<Link href="/session" />}
+            >
               Start Free Trial
               <ArrowRight className="ml-2 size-4" />
             </Button>
@@ -393,7 +400,10 @@ export default function Home() {
             deals, faster.
           </p>
           <div className="relative mt-8">
-            <Button className="h-12 rounded-full bg-amber-500 px-8 text-sm font-semibold text-zinc-950 hover:bg-amber-400">
+            <Button
+              className="h-12 rounded-full bg-amber-500 px-8 text-sm font-semibold text-zinc-950 hover:bg-amber-400"
+              render={<Link href="/session" />}
+            >
               Start Free Trial
               <ArrowRight className="ml-2 size-4" />
             </Button>
