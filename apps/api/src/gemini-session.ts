@@ -29,7 +29,7 @@ export async function createGeminiSession(callbacks: SessionCallbacks) {
   let currentText = "";
 
   const session = await ai.live.connect({
-    model: "gemini-live-2.5-flash-preview",
+    model: "gemini-2.0-flash-live-001",
     config: {
       responseModalities: [Modality.TEXT],
       systemInstruction: SYSTEM_INSTRUCTION,

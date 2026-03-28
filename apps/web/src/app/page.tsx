@@ -164,12 +164,12 @@ export default function Home() {
               </a>
             </div>
           </div>
-          <Button
-            className="h-9 rounded-full bg-amber-500 px-4 text-sm font-semibold text-zinc-950 hover:bg-amber-400"
-            render={<Link href="/session" />}
+          <Link
+            href="/session"
+            className="inline-flex h-9 items-center justify-center rounded-full bg-amber-500 px-4 text-sm font-semibold text-zinc-950 transition-colors hover:bg-amber-400"
           >
             Get Started
-          </Button>
+          </Link>
         </div>
       </nav>
 
@@ -205,13 +205,13 @@ export default function Home() {
             className="animate-fade-up mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row"
             style={{ animationDelay: "300ms" }}
           >
-            <Button
-              className="h-12 rounded-full bg-amber-500 px-8 text-sm font-semibold text-zinc-950 hover:bg-amber-400"
-              render={<Link href="/session" />}
+            <Link
+              href="/session"
+              className="inline-flex h-12 items-center justify-center rounded-full bg-amber-500 px-8 text-sm font-semibold text-zinc-950 transition-colors hover:bg-amber-400"
             >
               Start Free Trial
               <ArrowRight className="ml-2 size-4" />
-            </Button>
+            </Link>
             <Button
               variant="outline"
               className="h-12 rounded-full px-8 text-sm"
@@ -400,13 +400,13 @@ export default function Home() {
             deals, faster.
           </p>
           <div className="relative mt-8">
-            <Button
-              className="h-12 rounded-full bg-amber-500 px-8 text-sm font-semibold text-zinc-950 hover:bg-amber-400"
-              render={<Link href="/session" />}
+            <Link
+              href="/session"
+              className="inline-flex h-12 items-center justify-center rounded-full bg-amber-500 px-8 text-sm font-semibold text-zinc-950 transition-colors hover:bg-amber-400"
             >
               Start Free Trial
               <ArrowRight className="ml-2 size-4" />
-            </Button>
+            </Link>
             <p className="mt-4 text-xs text-zinc-500">
               No credit card required
             </p>
